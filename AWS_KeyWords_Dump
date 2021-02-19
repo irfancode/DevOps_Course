@@ -1,0 +1,4 @@
+EC2-Instances,AMI, IAM, ELB, EBS, RDS, S3.
+AWS Auto scaling and Cloud Watch for applications.
+Configuring and using S3FS and S3cmd for artefacts storage management
+AWS Beanstalk with CI engine ( Jenkins )
