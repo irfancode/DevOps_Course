@@ -1,0 +1,10 @@
+# GitHub Pages Configuration
+# Ensure this file is present for GitHub Pages to build
+
+plugins:
+  - jekyll-remote-theme
+
+remote_theme: pages-themes/minimal@v0.2.0
+
+title: DevOps Course for Beginners
+description: Learn DevOps from zero to hero - Git, Linux, Docker, CI/CD, Cloud & Kubernetes

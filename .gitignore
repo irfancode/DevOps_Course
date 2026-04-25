@@ -1,8 +1,5 @@
-# Cache objects
-packer_cache/
-
-# Crash log
-crash.log
-
-# For built boxes
-*.box
+# Keep CSS and other assets
+assets/
+_images/
+*.css
+!assets/css/style.css

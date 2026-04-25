@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Course - Learn DevOps from Zero to Hero</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="icon">🚀</span>
+                <h1>DevOps Course</h1>
+            </div>
+            <nav class="nav">
+                <a href="#modules">Modules</a>
+                <a href="#prerequisites">Prerequisites</a>
+                <a href="#labs">Labs</a>
+                <a href="https://github.com/irfanseaf/DevOps_Course" target="_blank">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Learn DevOps from Zero to Hero</h2>
+                <p class="subtitle">A comprehensive hands-on course covering Git, Linux, Docker, CI/CD, Cloud & Kubernetes</p>
+                <div class="badges">
+                    <span class="badge">Beginner Friendly</span>
+                    <span class="badge">Hands-on Labs</span>
+                    <span class="badge">Free & Open Source</span>
+                </div>
+                <a href="#modules" class="btn btn-primary">Start Learning</a>
+            </div>
+        </section>
+
+        <section class="roadmap">
+            <div class="container">
+                <h2>Your Learning Path</h2>
+                <div class="roadmap-grid">
+                    <div class="roadmap-item">
+                        <div class="week">Week 1</div>
+                        <div class="title">Git & Version Control</div>
+                        <div class="desc">Master source code management</div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="week">Week 2</div>
+                        <div class="title">Linux Essentials</div>
+                        <div class="desc">Work with the command line</div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="week">Week 3</div>
+                        <div class="title">Docker & Containers</div>
+                        <div class="desc">Package and run applications</div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="week">Week 4</div>
+                        <div class="title">CI/CD Pipelines</div>
+                        <div class="desc">Automate your deployments</div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="week">Week 5</div>
+                        <div class="title">Cloud Fundamentals</div>
+                        <div class="desc">Deploy to the cloud</div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="week">Week 6</div>
+                        <div class="title">Kubernetes</div>
+                        <div class="desc">Orchestrate containers at scale</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="modules" id="modules">
+            <div class="container">
+                <h2>Course Modules</h2>
+                <div class="modules-grid">
+                    <div class="module-card">
+                        <div class="module-icon">📚</div>
+                        <h3>Module 1: Git & Version Control</h3>
+                        <p>Learn version control fundamentals, branching strategies, and collaboration workflows.</p>
+                        <ul class="topics">
+                            <li>Git basics and configuration</li>
+                            <li>Branching and merging</li>
+                            <li>GitHub workflows</li>
+                            <li>Collaboration with pull requests</li>
+                        </ul>
+                        <a href="{{ site.baseurl }}/modules/01-git-fundamentals/" class="btn btn-secondary">Start Module</a>
+                    </div>
+
+                    <div class="module-card">
+                        <div class="module-icon">💻</div>
+                        <h3>Module 2: Linux Essentials</h3>
+                        <p>Master the command line, file system navigation, and system administration basics.</p>
+                        <ul class="topics">
+                            <li>File system navigation</li>
+                            <li>User and permission management</li>
+                            <li>Process management</li>
+                            <li>Networking basics</li>
+                        </ul>
+                        <a href="{{ site.baseurl }}/modules/02-linux-essentials/" class="btn btn-secondary">Start Module</a>
+                    </div>
+
+                    <div class="module-card">
+                        <div class="module-icon">🐳</div>
+                        <h3>Module 3: Docker & Containers</h3>
+                        <p>Package applications into containers, manage images, and use Docker Compose.</p>
+                        <ul class="topics">
+                            <li>Container concepts</li>
+                            <li>Dockerfile creation</li>
+                            <li>Docker Compose</li>
+                            <li>Networking and volumes</li>
+                        </ul>
+                        <a href="{{ site.baseurl }}/modules/03-docker-containers/" class="btn btn-secondary">Start Module</a>
+                    </div>
+
+                    <div class="module-card">
+                        <div class="module-icon">🔄</div>
+                        <h3>Module 4: CI/CD Pipelines</h3>
+                        <p>Build automated pipelines for testing, building, and deploying applications.</p>
+                        <ul class="topics">
+                            <li>GitHub Actions</li>
+                            <li>Automated testing</li>
+                            <li>Deployment strategies</li>
+                            <li>Secrets management</li>
+                        </ul>
+                        <a href="{{ site.baseurl }}/modules/04-cicd-pipelines/" class="btn btn-secondary">Start Module</a>
+                    </div>
+
+                    <div class="module-card">
+                        <div class="module-icon">☁️</div>
+                        <h3>Module 5: Cloud Fundamentals (AWS)</h3>
+                        <p>Deploy applications to the cloud using AWS services and infrastructure.</p>
+                        <ul class="topics">
+                            <li>EC2 instances</li>
+                            <li>S3 storage</li>
+                            <li>IAM and security</li>
+                            <li>Networking basics</li>
+                        </ul>
+                        <a href="{{ site.baseurl }}/modules/05-cloud-aws/" class="btn btn-secondary">Start Module</a>
+                    </div>
+
+                    <div class="module-card">
+                        <div class="module-icon">☸️</div>
+                        <h3>Module 6: Kubernetes</h3>
+                        <p>Orchestrate containers at scale with Kubernetes deployments and services.</p>
+                        <ul class="topics">
+                            <li>K8s architecture</li>
+                            <li>Deployments and pods</li>
+                            <li>Services and ingress</li>
+                            <li>ConfigMaps and secrets</li>
+                        </ul>
+                        <a href="{{ site.baseurl }}/modules/06-kubernetes/" class="btn btn-secondary">Start Module</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="prerequisites" id="prerequisites">
+            <div class="container">
+                <h2>What You Need to Start</h2>
+                <div class="prereq-grid">
+                    <div class="prereq-card">
+                        <h3>💻 Computer Requirements</h3>
+                        <ul>
+                            <li>macOS, Windows, or Linux</li>
+                            <li>8GB+ RAM (4GB minimum)</li>
+                            <li>20GB+ free disk space</li>
+                            <li>Internet connection</li>
+                        </ul>
+                    </div>
+                    <div class="prereq-card">
+                        <h3>🛠️ Software Requirements</h3>
+                        <ul>
+                            <li>Git (<a href="https://git-scm.com">Download</a>)</li>
+                            <li>Docker Desktop (<a href="https://docker.com">Download</a>)</li>
+                            <li>VS Code (<a href="https://code.visualstudio.com">Download</a>)</li>
+                            <li>AWS CLI (<a href="https://aws.amazon.com/cli">Download</a>)</li>
+                        </ul>
+                    </div>
+                    <div class="prereq-card">
+                        <h3>📖 Knowledge Requirements</h3>
+                        <ul>
+                            <li>Basic programming concepts</li>
+                            <li>How to use a browser</li>
+                            <li>Willingness to learn!</li>
+                            <li>No prior DevOps experience needed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="labs" id="labs">
+            <div class="container">
+                <h2>Hands-On Labs</h2>
+                <p class="section-intro">Each module includes practical exercises to reinforce your learning</p>
+                <div class="labs-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Lab</th>
+                                <th>Module</th>
+                                <th>Time</th>
+                                <th>Level</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="{{ site.baseurl }}/modules/01-git-fundamentals/labs/">Git Workout</a></td>
+                                <td>Module 1</td>
+                                <td>30 min</td>
+                                <td><span class="level beginner">Beginner</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="{{ site.baseurl }}/modules/02-linux-essentials/labs/">Linux Scavenger Hunt</a></td>
+                                <td>Module 2</td>
+                                <td>45 min</td>
+                                <td><span class="level beginner">Beginner</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="{{ site.baseurl }}/modules/03-docker-containers/labs/">Containerize a Web App</a></td>
+                                <td>Module 3</td>
+                                <td>60 min</td>
+                                <td><span class="level beginner">Beginner</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="{{ site.baseurl }}/modules/04-cicd-pipelines/labs/">Build Your First Pipeline</a></td>
+                                <td>Module 4</td>
+                                <td>90 min</td>
+                                <td><span class="level intermediate">Intermediate</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="{{ site.baseurl }}/modules/05-cloud-aws/labs/">Deploy to AWS</a></td>
+                                <td>Module 5</td>
+                                <td>60 min</td>
+                                <td><span class="level intermediate">Intermediate</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="{{ site.baseurl }}/modules/06-kubernetes/labs/">K8s Deployment</a></td>
+                                <td>Module 6</td>
+                                <td>90 min</td>
+                                <td><span class="level intermediate">Intermediate</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Ready to Start Your DevOps Journey?</h2>
+                <p>Clone the repository and begin learning today!</p>
+                <div class="code-block">
+                    <code>git clone https://github.com/irfanseaf/DevOps_Course.git</code>
+                </div>
+                <a href="https://github.com/irfanseaf/DevOps_Course" class="btn btn-primary" target="_blank">View on GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>DevOps Course</h4>
+                    <p>Learn DevOps from zero to hero with hands-on exercises and real-world projects.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#modules">Modules</a>
+                    <a href="#prerequisites">Prerequisites</a>
+                    <a href="#labs">Labs</a>
+                    <a href="https://github.com/irfanseaf/DevOps_Course">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Built with ❤️ for aspiring DevOps engineers | Last updated: April 2026</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
