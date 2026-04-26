@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 6: Kubernetes - DevOps Course</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        header { background: #1a1a2e; color: white; padding: 1rem 0; }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 0.5rem; font-size: 1.2rem; font-weight: bold; }
+        nav a { color: white; text-decoration: none; opacity: 0.9; }
+        h1 { color: #1a1a2e; margin: 2rem 0 1rem; font-size: 2.5rem; }
+        h2 { color: #1a1a2e; margin: 2rem 0 1rem; font-size: 1.8rem; }
+        pre { background: #1a1a2e; color: #fff; padding: 1.5rem; border-radius: 10px; overflow-x: auto; margin: 1rem 0; }
+        .btn { display: inline-block; background: #667eea; color: white; padding: 0.8rem 1.5rem; border-radius: 25px; text-decoration: none; margin: 0.5rem 1rem 0.5rem 0; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.8rem; text-align: left; border: 1px solid #ddd; }
+        th { background: #f8f9fa; }
+        footer { background: #1a1a2e; color: white; padding: 2rem 0; text-align: center; margin-top: 3rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html" style="color:white;text-decoration:none;">🚀 DevOps Course</a>
+            </div>
+            <nav><a href="../index.html">Home</a></nav>
+        </div>
+    </header>
+    <main class="container">
+        <h1>☸️ Module 6: Kubernetes</h1>
+        <h2>Learning Objectives</h2>
+        <ul>
+            <li>Understand Kubernetes architecture</li>
+            <li>Deploy applications to K8s</li>
+            <li>Manage pods, services, and deployments</li>
+            <li>Use ConfigMaps and Secrets</li>
+        </ul>
+        <h2>Start Learning</h2>
+        <div>
+            <a href="./README.md" class="btn">📖 K8s Fundamentals</a>
+            <a href="./deployments.md" class="btn">🚀 Deployments & Services</a>
+            <a href="./labs/lab-06-kubernetes.md" class="btn">🧪 Lab Exercises</a>
+        </div>
+        <h2>What is Kubernetes?</h2>
+        <p><strong>Kubernetes (K8s)</strong> is an orchestration platform that automates deployment, scaling, and management of containerized applications.</p>
+        <h2>Key Concepts</h2>
+        <table>
+            <tr><th>Concept</th><th>Description</th></tr>
+            <tr><td><strong>Pod</strong></td><td>Smallest deployable unit (1+ containers)</td></tr>
+            <tr><td><strong>Node</strong></td><td>Worker machine (VM or physical)</td></tr>
+            <tr><td><strong>Deployment</strong></td><td>Manages pod replicas</td></tr>
+            <tr><td><strong>Service</strong></td><td>Network access to pods</td></tr>
+            <tr><td><strong>ConfigMap</strong></td><td>Configuration data</td></tr>
+            <tr><td><strong>Secret</strong></td><td>Sensitive data</td></tr>
+        </table>
+        <h2>kubectl Basics</h2>
+        <pre><code>kubectl get pods
+kubectl get nodes
+kubectl get services
+kubectl create deployment myapp --image=nginx
+kubectl scale deployment myapp --replicas=5
+kubectl apply -f deployment.yaml
+kubectl delete pod myapp-pod</code></pre>
+    </main>
+    <footer><p>Built with ❤️ for aspiring DevOps engineers</p></footer>
+</body>
+</html>

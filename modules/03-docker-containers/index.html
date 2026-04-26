@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3: Docker & Containers - DevOps Course</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        header { background: #1a1a2e; color: white; padding: 1rem 0; position: sticky; top: 0; }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 0.5rem; font-size: 1.2rem; font-weight: bold; }
+        nav a { color: white; text-decoration: none; opacity: 0.9; }
+        h1 { color: #1a1a2e; margin: 2rem 0 1rem; font-size: 2.5rem; }
+        h2 { color: #1a1a2e; margin: 2rem 0 1rem; font-size: 1.8rem; }
+        pre { background: #1a1a2e; color: #fff; padding: 1.5rem; border-radius: 10px; overflow-x: auto; margin: 1rem 0; }
+        code { font-family: 'Monaco', 'Menlo', monospace; }
+        .btn { display: inline-block; background: #667eea; color: white; padding: 0.8rem 1.5rem; border-radius: 25px; text-decoration: none; margin: 0.5rem 1rem 0.5rem 0; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.8rem; text-align: left; border: 1px solid #ddd; }
+        th { background: #f8f9fa; }
+        footer { background: #1a1a2e; color: white; padding: 2rem 0; text-align: center; margin-top: 3rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html" style="color:white;text-decoration:none;">🚀 DevOps Course</a>
+            </div>
+            <nav>
+                <a href="../index.html">Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>🐳 Module 3: Docker & Containers</h1>
+        
+        <h2>Learning Objectives</h2>
+        <ul>
+            <li>Understand container concepts</li>
+            <li>Install and use Docker</li>
+            <li>Create Docker images with Dockerfiles</li>
+            <li>Manage containers (start, stop, logs)</li>
+            <li>Use Docker Compose for multi-container apps</li>
+        </ul>
+
+        <h2>Start Learning</h2>
+        <div>
+            <a href="./README.md" class="btn">📖 Introduction to Docker</a>
+            <a href="./dockerfile.md" class="btn">📝 Dockerfile Deep Dive</a>
+            <a href="./compose.md" class="btn">🧾 Docker Compose</a>
+            <a href="./labs/lab-03-containerize-webapp.md" class="btn">🧪 Lab Exercises</a>
+        </div>
+
+        <h2>What are Containers?</h2>
+        <p>Containers are lightweight, portable units that package an application with all its dependencies. They are faster and more efficient than virtual machines.</p>
+
+        <h2>Key Terms</h2>
+        <table>
+            <tr><th>Term</th><th>Description</th></tr>
+            <tr><td><strong>Image</strong></td><td>A read-only template for creating containers</td></tr>
+            <tr><td><strong>Container</strong></td><td>A running instance of an image</td></tr>
+            <tr><td><strong>Dockerfile</strong></td><td>Script to build an image</td></tr>
+            <tr><td><strong>Registry</strong></td><td>Storage for images (Docker Hub)</td></tr>
+            <tr><td><strong>Volume</strong></td><td>Persistent data storage</td></tr>
+        </table>
+
+        <h2>Essential Docker Commands</h2>
+        <pre><code>docker images                    # List local images
+docker pull nginx:latest    # Download image
+docker build -t myapp .     # Build from Dockerfile
+docker run -d myapp      # Run container in background
+docker ps                # Running containers
+docker logs container     # View logs
+docker exec -it container bash  # Enter container
+docker stop container     # Stop container
+docker rm container       # Remove container</code></pre>
+
+        <h2>Basic Dockerfile</h2>
+        <pre><code>FROM node:18-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --only=production
+COPY . .
+EXPOSE 3000
+ENV NODE_ENV=production
+CMD ["node", "server.js"]</code></pre>
+    </main>
+
+    <footer>
+        <p>Built with ❤️ for aspiring DevOps engineers</p>
+    </footer>
+</body>
+</html>

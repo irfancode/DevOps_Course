@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: Git & Version Control - DevOps Course</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        header { background: #1a1a2e; color: white; padding: 1rem 0; position: sticky; top: 0; }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 0.5rem; font-size: 1.2rem; font-weight: bold; }
+        nav a { color: white; text-decoration: none; opacity: 0.9; }
+        h1 { color: #1a1a2e; margin: 2rem 0 1rem; font-size: 2.5rem; }
+        h2 { color: #1a1a2e; margin: 2rem 0 1rem; font-size: 1.8rem; }
+        .objectives { background: #f0f7ff; padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0; }
+        .objectives ul { list-style: none; }
+        .objectives li { padding: 0.5rem 0; }
+        .objectives li::before { content: "✓ "; color: #667eea; font-weight: bold; }
+        pre { background: #1a1a2e; color: #fff; padding: 1.5rem; border-radius: 10px; overflow-x: auto; margin: 1rem 0; }
+        code { font-family: 'Monaco', 'Menlo', monospace; }
+        .btn { display: inline-block; background: #667eea; color: white; padding: 0.8rem 1.5rem; border-radius: 25px; text-decoration: none; margin: 0.5rem 1rem 0.5rem 0; }
+        .btn:hover { background: #5568d3; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.8rem; text-align: left; border: 1px solid #ddd; }
+        th { background: #f8f9fa; }
+        footer { background: #1a1a2e; color: white; padding: 2rem 0; text-align: center; margin-top: 3rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html" style="color:white;text-decoration:none;">🚀 DevOps Course</a>
+            </div>
+            <nav>
+                <a href="../index.html">Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>📚 Module 1: Git & Version Control</h1>
+        
+        <h2>Learning Objectives</h2>
+        <div class="objectives">
+            <ul>
+                <li>Understand what version control is and why it matters</li>
+                <li>Install and configure Git on your machine</li>
+                <li>Use basic Git commands to track changes</li>
+                <li>Create and manage branches</li>
+                <li>Collaborate with others using GitHub</li>
+            </ul>
+        </div>
+
+        <h2>Topics Covered</h2>
+        <ul>
+            <li>Git basics and configuration</li>
+            <li>Branching and merging</li>
+            <li>GitHub workflows</li>
+            <li>Collaboration with pull requests</li>
+        </ul>
+
+        <h2>Start Learning</h2>
+        <div>
+            <a href="./README.md" class="btn">📖 Introduction to Git</a>
+            <a href="./commands.md" class="btn">💻 Basic Commands</a>
+            <a href="./branching.md" class="btn">🌿 Branching & Merging</a>
+            <a href="./labs/lab-01-git-workout.md" class="btn">🧪 Lab Exercises</a>
+        </div>
+
+        <h2>What is Version Control?</h2>
+        <p><strong>Version Control</strong> is a system that records changes to files over time so you can recall specific versions later. Think of it as a time machine for your code!</p>
+
+        <h2>Git vs GitHub</h2>
+        <table>
+            <tr><th>Term</th><th>What it is</th></tr>
+            <tr><td><strong>Git</strong></td><td>A version control system (the software)</td></tr>
+            <tr><td><strong>GitHub</strong></td><td>A cloud platform that hosts Git repositories</td></tr>
+        </table>
+
+        <h2>Essential Git Commands</h2>
+        <pre><code># Initialize repository
+git init
+
+# Check status
+git status
+
+# Add files
+git add .
+git add filename.txt
+
+# Commit changes
+git commit -m "Your message"
+
+# View history
+git log
+git log --oneline</code></pre>
+
+        <h2>Branching</h2>
+        <pre><code># Create branch
+git branch feature-name
+
+# Switch to branch
+git checkout feature-name
+git switch feature-name
+
+# Create and switch
+git checkout -b feature-name
+
+# Merge branch
+git checkout main
+git merge feature-name</code></pre>
+    </main>
+
+    <footer>
+        <p>Built with ❤️ for aspiring DevOps engineers</p>
+    </footer>
+</body>
+</html>
