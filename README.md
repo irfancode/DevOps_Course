@@ -41,37 +41,37 @@ cd modules/01-git-fundamentals
 - [Introduction to Git](./modules/01-git-fundamentals/README.md)
 - [Basic Commands](./modules/01-git-fundamentals/commands.md)
 - [Branching & Merging](./modules/01-git-fundamentals/branching.md)
-- [Lab Exercises](./modules/01-git-fundamentals/labs/)
+- [Lab Exercises](./modules/01-git-fundamentals/labs/lab-01-git-workout.md)
 
 ### Module 2: Linux Essentials
 - [Linux Basics](./modules/02-linux-essentials/README.md)
 - [File System Navigation](./modules/02-linux-essentials/filesystem.md)
 - [User Management](./modules/02-linux-essentials/users.md)
 - [Networking Basics](./modules/02-linux-essentials/networking.md)
-- [Lab Exercises](./modules/02-linux-essentials/labs/)
+- [Lab Exercises](./modules/02-linux-essentials/labs/lab-02-linux-scavenger.md)
 
 ### Module 3: Docker & Containers
 - [Introduction to Docker](./modules/03-docker-containers/README.md)
 - [Dockerfile Deep Dive](./modules/03-docker-containers/dockerfile.md)
 - [Docker Compose](./modules/03-docker-containers/compose.md)
-- [Lab Exercises](./modules/03-docker-containers/labs/)
+- [Lab Exercises](./modules/03-docker-containers/labs/lab-03-containerize-webapp.md)
 
 ### Module 4: CI/CD Pipelines
 - [CI/CD Fundamentals](./modules/04-cicd-pipelines/README.md)
 - [GitHub Actions](./modules/04-cicd-pipelines/github-actions.md)
 - [Jenkins Basics](./modules/04-cicd-pipelines/jenkins.md)
-- [Lab Exercises](./modules/04-cicd-pipelines/labs/)
+- [Lab Exercises](./modules/04-cicd-pipelines/labs/lab-04-cicd-pipeline.md)
 
 ### Module 5: Cloud Fundamentals (AWS)
 - [AWS Overview](./modules/05-cloud-aws/README.md)
 - [EC2 & Compute](./modules/05-cloud-aws/ec2.md)
 - [S3 & Storage](./modules/05-cloud-aws/s3.md)
-- [Lab Exercises](./modules/05-cloud-aws/labs/)
+- [Lab Exercises](./modules/05-cloud-aws/labs/lab-05-deploy-aws.md)
 
 ### Module 6: Kubernetes
 - [K8s Fundamentals](./modules/06-kubernetes/README.md)
 - [Deployments & Services](./modules/06-kubernetes/deployments.md)
-- [Lab Exercises](./modules/06-kubernetes/labs/)
+- [Lab Exercises](./modules/06-kubernetes/labs/lab-06-kubernetes.md)
 
 ## Hands-On Labs
 

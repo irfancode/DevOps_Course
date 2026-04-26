@@ -429,4 +429,4 @@ jobs:
 
 ---
 
-**← [Back to Module 3](../03-docker-containers/README.md)** | **[Lab: Build Your First Pipeline →](./labs/)**
+**← [Back to Module 3](../03-docker-containers/README.md)** | **[Lab: Build Your First Pipeline →](./labs/lab-04-cicd-pipeline.md)**

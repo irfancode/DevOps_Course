@@ -251,7 +251,7 @@ git stash                 # Temporarily hide changes
 
 ➡️ **[Commands Reference](./commands.md)** - Quick command reference
 ➡️ **[Branching & Merging](./branching.md)** - Advanced branching
-➡️ **[Lab Exercises](./labs/)** - Practice with hands-on exercises
+➡️ **[Lab Exercises](./labs/lab-01-git-workout.md)** - Practice with hands-on exercises
 
 ---
 

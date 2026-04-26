@@ -214,7 +214,7 @@ aws iam get-user
 
 ## Next Steps
 
-➡️ **[Lab: Deploy to AWS](./labs/)** - Practice deploying to the cloud
+➡️ **[Lab: Deploy to AWS](./labs/lab-05-deploy-aws.md)** - Practice deploying to the cloud
 
 ---
 

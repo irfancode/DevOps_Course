@@ -349,4 +349,4 @@ HEALTHCHECK --interval=30s CMD curl -f http://localhost/health || exit 1
 
 ---
 
-**← [Back to Module 2](../02-linux-essentials/README.md)** | **[Lab: Containerize a Web App →](./labs/)**
+**← [Back to Module 2](../02-linux-essentials/README.md)** | **[Lab: Containerize a Web App →](./labs/lab-03-containerize-webapp.md)**

@@ -349,4 +349,4 @@ minikube addons list
 
 ---
 
-**← [Back to Module 5](../05-cloud-aws/README.md)** | **[Lab: K8s Deployment →](./labs/)**
+**← [Back to Module 5](../05-cloud-aws/README.md)** | **[Lab: K8s Deployment →](./labs/lab-06-kubernetes.md)**
