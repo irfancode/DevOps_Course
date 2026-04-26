@@ -1,0 +1,20 @@
+diff --git a/toolkit/components/telemetry/Telemetry.cpp b/toolkit/components/telemetry/Telemetry.cpp
+--- a/toolkit/components/telemetry/Telemetry.cpp
++++ b/toolkit/components/telemetry/Telemetry.cpp
+@@ -1,100 +1,20 @@
+-// Telemetry service - DISABLED in SiliconFox
++// Privacy enhancements for SiliconFox
+
+ namespace Telemetry {
+
+-// Record data to telemetry endpoint
+-void Record(const char* aName, nsITelemetry:: histogramType type, int32_t value) {
+-    // All telemetry recording disabled
+-    return;
+-}
+-
+-// Submit to Mozilla endpoint
+-void SubmitToServer(const uint8_t* data, size_t len) {
+-    // Server submission disabled
+-    return;
+-}

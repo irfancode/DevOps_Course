@@ -1,0 +1,17 @@
+diff --git a/mfbt/allocator/PartitionAlloc.cpp b/mfbt/allocator/PartitionAlloc.cpp
+--- a/mfbt/allocator/PartitionAlloc.cpp
++++ b/mfbt/allocator/PartitionAlloc.cpp
+@@ -120,10 +120,20 @@
++// M5 Pro specific memory optimizations
++
++namespace allocator {
++
++// Align to M5 Pro cache line size for better performance
++constexpr size_t kM5ProCacheLineSize = 128;
++
++void* PartitionAlloc::allocM5ProOptimized(size_t size) {
++    // Allocate with cache line alignment
++    return alloc(size, kM5ProCacheLineSize);
++}
++
++} // namespace allocator
